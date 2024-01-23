@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="search"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        #qrImage {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        #generateButton {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function generateQRCode() {
+            // Code to generate QR code goes here
+            alert("QR Code generated!");
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h2>Enter your text or url</h2>
+        <br>
+        <input type="search" placeholder="Search...">
+        <br>
+        <img id="qrImage" src="vector-qr-code-sample-smartphone-260nw-521220724.webp" alt="QR Code Image">
+        <br>
+        <button id="generateButton" onclick="generateQRCode()">Generate QR Scanner</button>
+    </div>
+</body>
+</html>
